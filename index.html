@@ -8,43 +8,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">      
     <meta charset="UTF-8">
     <!-- Add external stylesheet -->
-    <link rel="stylesheets" type="text/css" href="styles/styles.css">
-    <!-- Favicon added -->
-    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico">" -->
-    <!-- link fontawesome to add social media icons -->
-    <script src="https://kit.fontawesome.com/8981bb8382.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- link handlebars.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.js"></script>
   </head>
   <body>
-    <header>
-      <div id="logoBox">
-        <img src="media/icon.jpg" alt="logo for Zamalek Media" id="logo">
-        <nav>
-          <div class="navItem"> Home </div>
-          <div class="navItem"> News </div>
-          <div class="navItem"> Info </div>
-          <div class="navItem"> Subscribe </div>
-        </nav>
-
+    <header id="banner-container">
+      <div class="logobox">
+        <a href="index.html">
+          <img src="media/logo.png" alt="logo for Zamalek Media" id="logo">
+        </a>
+      </div>
+      <div id="menubox">
         <!-- Display searchbar and social media icons -->
-        <div id="searchBox">
+        <div id="searchbox">
+          <h1>Zamalek Media</h1>
+          <div id="icons">
+            <a href="https://www.facebook.com/facebook/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/zamalek__media/" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UC41fxoc6XkC6_QkfCAYFZsQ" class="fa fa-youtube"></a>
+          </div>
           <div id="search"></div>
-          <div id="topIcon"></div>
         </div>
+        <nav>
+          <a href="index.html" class="navItem"> Home </a>
+          <a href="news.html" class="navItem"> News </a>
+          <a href="info.html" class="navItem"> Info </a>
+          <a href="info.html" class="navItem"> Subscribe </a>
+        </nav>
       </div>
     </header>
 
     <main>
-      <div id="carosel"></div>
-      <div id="topVid"></div>
-      <div id="articleBar"></div>
+      <div id="carosel">
+        <img src="media/action.jpg" alt="" width="100px" height="200px">
+        <img src="media/chillin.jpg" alt="" width="100px" height="200px">
+        <img src="media/flex.jpg" alt="" width="100px" height="200px">
+        <img src="media/hand.jpg" alt="" width="100px" height="200px">
+      </div>
+      <div class="topVidContainer">
+
+      </div>
+      <div id="articleBar">
+        <div class="article"></div>
+        <div class="article"></div>
+        <div class="article"></div>
+      </div>
       <div id="call"></div>
-      <div id="featureVids"></div>
+      <div id="featureVids">
+        <div class="bigvid"></div>
+        <div class="smallvid"></div>
+        <div class="smallvid"></div>
+        <div class="smallvid"></div>
+      </div>
     </main>
 
     <footer>
-      
+      <div class="ad">
+        <h3>Advertising</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="contact">
+        <h3>Contact us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="social">
+        <h3>Follow us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </footer>
   </body>
 </html>
