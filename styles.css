@@ -1,0 +1,123 @@
+body {
+
+}
+
+h1 {
+  font-size: large;
+  color: aliceblue;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Hover effect*/
+  .fa:hover {
+    opacity: 0.7;
+    color: default;
+  }
+
+  .fa:visited {
+    color: default;
+  }
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+/* instagram */
+.fa-instagram {
+    background: #d63722;
+    color: white;
+    }
+
+/* youtube */
+.fa-youtube {
+    background: #d61f1f;
+    color: white;
+    }
+
+/* headers style */
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+#banner-container {
+    display: flex;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #000;
+}
+
+.logobox {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+#menubox {
+  display: flex;
+  flex-direction:column;
+  width: 80%;
+  justify-content: flex-end;
+  padding: 0% 2%;
+}
+
+#searchbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: auto; 
+}
+
+#searchbox h1 {
+  width: 30%;
+  text-align: center;
+}
+
+#icons {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+#search {
+  width: 30%;
+  height: 40px;
+  background-color: aliceblue;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.navItem {
+  background-color: #d91e41;
+  width: 25%;
+  height: 40px;
+  border: 5px #000;
+  text-align: center;
+  margin: auto;
+  line-height: 45px;
+}
+
+/* indexMain Style*/
+
+main {
+  margin-top: 117px;
+}
