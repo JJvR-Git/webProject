@@ -1,41 +1,31 @@
-// let slideIndex = 1;
-// let slides;
-// let dots;
-// // Carousel code ////////////////////////////////////////////////////
-// showSlide(slideIndex);
+//header scroll code
 
-// // navigation by arrows
-// function moveSlide(n){
-//     showSlide(slideIndex += n);
-// }
+window.onscroll = function() {scrollFunction()};
 
-// // navigation by dots
-// function nowSlide(n){
-//     showSlide(slideIndex = n);
-// }
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("banner-container").style.top = "-70px";
+    document.getElementById("topbox").style.display = "none";
+    document.getElementById("scrollsearch").style.display = "flex";
+    document.getElementById("icons").style.marginTop = "1%";
+  } else {
+    document.getElementById("banner-container").style.top = "0px";
+    document.getElementById("topbox").style.display = "flex";
+    document.getElementById("scrollsearch").style.display = "none";
+  }
+}
 
-// function showSlide(n){
-    
-//     slides = document.getElementsByClassName("slide");
-    
-//     dots = document.getElementsByClassName("dot");
+// call to action reveille/ hide code
 
-//     if(n > slides.length){
-//         n = 1;
-//     }
+function callReveille(){
+  document.getElementById("calltext").style.display = "block";
+}
 
-//     if(n < 1){
-//         n = slides.length;
-//     }
+function callHide(){
+  document.getElementById("calltext").style.display = "none";
+}
 
-//     for(let i = 0; i < slides.length; i++){
-//         slides[i].style.display = "none";
-//         dots[i].className = dots[i].className.replace(" actDot", "");
-//     }
-
-//     slides[n].style.display = "block";
-
-//     dots[n].className += "actDot";
-
-//     console.log(" hmmmmmm");
-// }
+function subReveille(){
+  document.getElementById("hidesub").style.display = "flex";
+  document.getElementById("subscribehere").style.marginBottom = "20px";
+}

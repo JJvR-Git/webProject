@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Zamalek Local</title>
+    <meta name="description" content="The website of Zamalek media">
+    <meta name="author" content="JJ van Rhyn">
+    <meta name="keywords" content="skateboarding, longboarding, downhill">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <meta charset="UTF-8">
+    <!-- Add external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link handlebars.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.js"></script>
+    <!-- link javaScript -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="banner-container">
+        <div class="logobox">
+          <a href="index.html">
+            <img id="logo" src="media/logo.png" alt="logo for Zamalek Media" id="logo">
+          </a>
+        </div>
+        <div id="menubox">
+          <!-- Display searchbar and social media icons -->
+          <div id="topbox">
+            <h1>Zamalek Media</h1>
+            <div class="icons">
+              <a href="https://www.facebook.com/facebook/" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/zamalek__media/" class="fa fa-instagram"></a>
+              <a href="https://www.youtube.com/channel/UC41fxoc6XkC6_QkfCAYFZsQ" class="fa fa-youtube"></a>
+            </div>
+            <div id="searchbox">
+              <input type="text" placeholder="Search..." class="search"></input>
+              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <nav>
+            <a href="index.html" class="navItem"> Home </a>
+            <a href="news.html" class="navItem"> News </a>
+            <a href="info.html" class="navItem"> Info </a>
+            <a href="info.html" onclick="subReveille()" class="navItem"> Subscribe </a>
+            <div id="scrollsearch">
+              <input type="text" placeholder="Search..." id="search"></input>
+              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+        <div class="top-news">
+          <div class="side">
+            <h3>News</h3>
+            <div class="side-article">
+              <img src="media/lean.jpg" alt=" ">
+              <p>Cool dudes doing cool stuff</p>
+            </div>
+            <div class="side-article">
+              <img src="media/lean.jpg" alt=" ">
+              <p>Cool dudes doing cool stuff</p>
+            </div>
+            <div class="side-article">
+              <img src="media/lean.jpg" alt=" ">
+              <p>Cool dudes doing cool stuff</p>
+            </div>
+          </div>
+          <div class="mid">
+            <img src="media/speed.jpg" alt="">
+            <h1>How fast would you go?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="side">
+            <h3>Trending</h3>
+            <div class="side-article">
+              <img src="media/lean.jpg" alt=" ">
+              <p>Cool dudes doing cool stuff</p>
+            </div>
+            <div class="side-article">
+              <img src="media/lean.jpg" alt=" ">
+              <p>Cool dudes doing cool stuff</p>
+            </div>
+            <div class="side-article">
+              <img src="media/lean.jpg" alt=" ">
+              <p>Cool dudes doing cool stuff</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="largeNews">
+            <img src="media/holliday.jpg" alt=" ">
+            <div class="contentNews">
+                <h3>Cool article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+        </div>
+
+        <div class="articleBar-news">
+            <div class="article-news">
+                <img src="media/lean.jpg" alt=" ">
+                <p>Cool dudes doing cool stuff</p>
+            </div>
+
+            <div class="article-news">
+                <img src="media/lean.jpg" alt=" ">
+                <p>Cool dudes doing cool stuff</p>
+            </div>
+
+            <div class="article-news">
+                <img src="media/lean.jpg" alt=" ">
+                <p>Cool dudes doing cool stuff</p>
+            </div>
+
+            <div class="article-news">
+                <img src="media/lean.jpg" alt=" ">
+                <p>Cool dudes doing cool stuff</p>
+            </div>
+        </div>
+
+        <div class="largeNews">
+            <div class="contentNews">
+                <h3>Cool article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <img src="media/holliday.jpg" alt=" ">
+        </div>
+
+        <div class="articleBar-news">
+            <div class="article-news">
+                <img src="media/lean.jpg" alt=" ">
+                <p>Cool dudes doing cool stuff</p>
+            </div>
+
+            <div class="article-news">
+                <img src="media/lean.jpg" alt=" ">
+                <p>Cool dudes doing cool stuff</p>
+            </div>
+
+            <div class="article-news">
+                <img src="media/lean.jpg" alt=" ">
+                <p>Cool dudes doing cool stuff</p>
+            </div>
+
+            <div class="article-news">
+                <img src="media/lean.jpg" alt=" ">
+                <p>Cool dudes doing cool stuff</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="ad footnote">
+          <h3>Advertising</h3>
+          <img src="media/graphic.png">
+          <img src="media/graphic.png">
+          <img src="media/graphic.png">
+          <p> to advertise here please sontact us at <a>ads@zamalekMedia.com</a></p>
+        </div>
+        <div class="contact footnote">
+          <h3>Contact us</h3>
+          <p>Join the gang: 074 770 1841</p>
+          <p>Pitch an idea: <a>pitch@zamalekMedia.com</a></p>
+          <p>Share your content: <a>share@zamalekMedia.com</a></p>
+          <p>Colaborations: <a>colab@zamalekMedia.com</a> </p>
+          <p>Sponsors: <a>sponsor@zamalekMedia.com</a></p>
+        </div>
+        <div class="social footnote">
+          <h3>Follow us</h3>
+          <div class="icons bot">
+            <a href="https://www.facebook.com/facebook/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/zamalek__media/" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UC41fxoc6XkC6_QkfCAYFZsQ" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

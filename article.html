@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Zamalek Local</title>
+    <meta name="description" content="The website of Zamalek media">
+    <meta name="author" content="JJ van Rhyn">
+    <meta name="keywords" content="skateboarding, longboarding, downhill">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <meta charset="UTF-8">
+    <!-- Add external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link handlebars.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.js"></script>
+    <!-- link javaScript -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="banner-container">
+        <div class="logobox">
+          <a href="index.html">
+            <img id="logo" src="media/logo.png" alt="logo for Zamalek Media" id="logo">
+          </a>
+        </div>
+        <div id="menubox">
+          <!-- Display searchbar and social media icons -->
+          <div id="topbox">
+            <h1>Zamalek Media</h1>
+            <div class="icons">
+              <a href="https://www.facebook.com/facebook/" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/zamalek__media/" class="fa fa-instagram"></a>
+              <a href="https://www.youtube.com/channel/UC41fxoc6XkC6_QkfCAYFZsQ" class="fa fa-youtube"></a>
+            </div>
+            <div id="searchbox">
+              <input type="text" placeholder="Search..." class="search"></input>
+              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <nav>
+            <a href="index.html" class="navItem"> Home </a>
+            <a href="news.html" class="navItem"> News </a>
+            <a href="info.html" class="navItem"> Info </a>
+            <a href="info.html" onclick="subReveille()" class="navItem"> Subscribe </a>
+            <div id="scrollsearch">
+              <input type="text" placeholder="Search..." id="search"></input>
+              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- <script id="articletemplate" type="template/handlebars">
+        <h1 id="test">{{greet}} to my website</h>
+      </script> -->
+      <div id="article">
+        <img src="{{img1}}">
+        <p>{{descript1}}</p>
+        <img src="{{img2}}">
+        <p>{{descript2}}</p>
+        <img src="{{img3}}">
+        <p>{{descript3}}</p>
+        <h1>{{header}}</h1>
+        <p>{{date}}</p>
+        <div id="artbody">{{articlebody}}</div>
+      </div>
+      
+      <div class="artnav">
+        <div class="prev"></div>
+        <div class="prev"></div>
+      </div>
+
+
+
+    </main>
+    <footer>
+      <div class="ad footnote">
+        <h3>Advertising</h3>
+        <img src="media/graphic.png">
+        <img src="media/graphic.png">
+        <img src="media/graphic.png">
+        <p> to advertise here please sontact us at <a>ads@zamalekMedia.com</a></p>
+      </div>
+      <div class="contact footnote">
+        <h3>Contact us</h3>
+        <p>Join the gang: 074 770 1841</p>
+        <p>Pitch an idea: <a>pitch@zamalekMedia.com</a></p>
+        <p>Share your content: <a>share@zamalekMedia.com</a></p>
+        <p>Colaborations: <a>colab@zamalekMedia.com</a> </p>
+        <p>Sponsors: <a>sponsor@zamalekMedia.com</a></p>
+      </div>
+      <div class="social footnote">
+        <h3>Follow us</h3>
+        <div class="icons bot">
+          <a href="https://www.facebook.com/facebook/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/zamalek__media/" class="fa fa-instagram"></a>
+          <a href="https://www.youtube.com/channel/UC41fxoc6XkC6_QkfCAYFZsQ" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
