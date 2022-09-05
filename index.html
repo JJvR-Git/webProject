@@ -7,6 +7,8 @@
     <meta name="keywords" content="skateboarding, longboarding, downhill">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">      
     <meta charset="UTF-8">
+    <!-- Add icon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <!-- Add external stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Add icon library -->
@@ -34,18 +36,18 @@
               <a href="https://www.youtube.com/channel/UC41fxoc6XkC6_QkfCAYFZsQ" class="fa fa-youtube"></a>
             </div>
             <div id="searchbox">
-              <input type="text" placeholder="Search..." class="search"></input>
-              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search..." class="search" oninput="setSearch()"></input>
+              <a href="search.html"><button type="submit" class="submit"><i class="fa fa-search"></i></button></a>
             </div>
           </div>
           <nav>
             <a href="index.html" class="navItem"> Home </a>
             <a href="news.html" class="navItem"> News </a>
             <a href="info.html" class="navItem"> Info </a>
-            <a href="info.html" onclick="subReveille()" class="navItem"> Subscribe </a>
+            <a href="info.html#subscribehere" onclick="subReveille()" class="navItem"> Subscribe </a>
             <div id="scrollsearch">
-              <input type="text" placeholder="Search..." id="search"></input>
-              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search..." class="search" oninput="setSearch()"></input>
+              <a href="search.html"><button type="submit" class="submit"><i class="fa fa-search"></i></button></a>
             </div>
           </nav>
         </div>
@@ -61,31 +63,31 @@
         </video>
       </figure>
 
-      <div id="articleBar-index">
-        <div class="article-index">
-          <img src="media/holliday.jpg" alt=" ">
+      <div class="articleBar-index">
+        <a class="article-index" href="article.html" onclick="curArticle(0)">
+          <img src="media/action.PNG" alt="in action shot">
           <p>Cool dudes doing cool stuff</p>
-        </div>
-        <div class="article-index">
-          <img src="media/action.jpg" alt=" ">
+        </a>
+        <a class="article-index" href="article.html" onclick="curArticle(1)">
+          <img src="media/hans.PNG" alt="Two longboarders bumping fists">
           <p>Cool dudes doing cool stuff</p>
-        </div>
-        <div class="article-index">
-          <img src="media/lean.jpg" alt=" ">
+        </a>
+        <a class="article-index" href="article.html" onclick="curArticle(2)">
+          <img src="media/car.PNG" alt="Skating by a car at speed">
           <p>Cool dudes doing cool stuff</p>
-        </div>
+        </a>
       </div>
 
       <div id="call" onmouseover="callReveille()" onmouseout="callHide()">
         <div class="callbackground">
-          <img class="rotate" src="media/gloves.png" alt=" ">
+          <img class="rotate" src="media/gloves.png" alt="Gloves to be won as a prize">
         </div>
         <div class="callmid">
           <h3 >Join the compitition NOW!</h3>
           <p id="calltext">Stand a chance to win amazing prizes</p>
         </div>
         <div class="callbackground">
-          <img class="rotate" src="media/gloves.png" alt=" ">
+          <img class="rotate" src="media/gloves.png" alt="Gloves to be won as a prize">
         </div>
       </div>
 
@@ -119,9 +121,9 @@
     <footer>
       <div class="ad footnote">
         <h3>Advertising</h3>
-        <img src="media/graphic.png">
-        <img src="media/graphic.png">
-        <img src="media/graphic.png">
+        <img src="media/graphic.png" alt="Outline of a longboarder in neon">
+        <img src="media/graphic.png" alt="Outline of a longboarder in neon">
+        <img src="media/graphic.png" alt="Outline of a longboarder in neon">
         <p> to advertise here please sontact us at <a>ads@zamalekMedia.com</a></p>
       </div>
       <div class="contact footnote">

@@ -16,7 +16,7 @@
     <!-- link javaScript -->
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload = genArticle()>
     <header>
       <div id="banner-container">
         <div class="logobox">
@@ -34,53 +34,70 @@
               <a href="https://www.youtube.com/channel/UC41fxoc6XkC6_QkfCAYFZsQ" class="fa fa-youtube"></a>
             </div>
             <div id="searchbox">
-              <input type="text" placeholder="Search..." class="search"></input>
-              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search..." class="search" oninput="setSearch()"></input>
+              <a href="search.html"><button type="submit" class="submit"><i class="fa fa-search"></i></button></a>
             </div>
           </div>
           <nav>
             <a href="index.html" class="navItem"> Home </a>
             <a href="news.html" class="navItem"> News </a>
             <a href="info.html" class="navItem"> Info </a>
-            <a href="info.html" onclick="subReveille()" class="navItem"> Subscribe </a>
+            <a href="info.html#subscribehere" onclick="subReveille()" class="navItem"> Subscribe </a>
             <div id="scrollsearch">
-              <input type="text" placeholder="Search..." id="search"></input>
-              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search..." class="search" oninput="setSearch()"></input>
+              <a href="search.html"><button type="submit" class="submit"><i class="fa fa-search"></i></button></a>
             </div>
           </nav>
         </div>
       </div>
     </header>
     <main class="main">
-      <!-- <script id="articletemplate" type="template/handlebars">
-        <h1 id="test">{{greet}} to my website</h>
-      </script> -->
       <div id="article">
-        <img src="{{img1}}">
-        <p>{{descript1}}</p>
-        <img src="{{img2}}">
-        <p>{{descript2}}</p>
-        <img src="{{img3}}">
-        <p>{{descript3}}</p>
-        <h1>{{header}}</h1>
-        <p>{{date}}</p>
-        <div id="artbody">{{articlebody}}</div>
+
+            <img id="img1">
+            <p id="desc1"></p>
+            <img id="img2">
+            <p id="desc2"></p>
+            <img id="img3">
+            <p id="desc3"></p>
+            <h1 id="arthead"></h1>
+            <p id="date"></p>
+            <div id="artbody"></div>
+
+        </div>
+
+        <div class="artnav">
+          <div class="prev" onclick="prevArt()">
+            <div class="arrow-left"></div>
+            <p>Previous</p>
+          </div>
+          <div class="next" onclick="nextArt()">
+            <p>Next</p>
+            <div class="arrow-right"></div>        
+          </div>
       </div>
-      
-      <div class="artnav">
-        <div class="prev"></div>
-        <div class="prev"></div>
+
+      <div class="articleBar-index">
+        <a class="article-index" href="article.html" onclick="curArticle(0)">
+          <img src="media/lean.PNG" alt="two longboarders on a picturesk road in the mountains">
+          <p>Cool dudes doing cool stuff</p>
+        </a>
+        <a class="article-index" href="article.html" onclick="curArticle(1)">
+          <img src="media/hans.PNG" alt="Two longboarders bumping fists">
+          <p>Cool dudes doing cool stuff</p>
+        </a>
+        <a class="article-index smallhide" href="article.html" onclick="curArticle(2)">
+          <img src="media/help.PNG" alt="Bike rider giving longboarder a helping hand">
+          <p>Cool dudes doing cool stuff</p>
+        </a>
       </div>
-
-
-
     </main>
     <footer>
       <div class="ad footnote">
         <h3>Advertising</h3>
-        <img src="media/graphic.png">
-        <img src="media/graphic.png">
-        <img src="media/graphic.png">
+        <img src="media/graphic.png" alt="Outline of a longboarder in neon">
+        <img src="media/graphic.png" alt="Outline of a longboarder in neon">
+        <img src="media/graphic.png" alt="Outline of a longboarder in neon">
         <p> to advertise here please sontact us at <a>ads@zamalekMedia.com</a></p>
       </div>
       <div class="contact footnote">

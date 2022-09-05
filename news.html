@@ -34,8 +34,8 @@
               <a href="https://www.youtube.com/channel/UC41fxoc6XkC6_QkfCAYFZsQ" class="fa fa-youtube"></a>
             </div>
             <div id="searchbox">
-              <input type="text" placeholder="Search..." class="search"></input>
-              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search..." class="search" oninput="setSearch()"></input>
+              <a href="search.html"><button type="submit" class="submit"><i class="fa fa-search"></i></button></a>
             </div>
           </div>
           <nav>
@@ -44,8 +44,8 @@
             <a href="info.html" class="navItem"> Info </a>
             <a href="info.html" onclick="subReveille()" class="navItem"> Subscribe </a>
             <div id="scrollsearch">
-              <input type="text" placeholder="Search..." id="search"></input>
-              <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search..." class="search" oninput="setSearch()"></input>
+              <a href="search.html"><button type="submit" class="submit"><i class="fa fa-search"></i></button></a>
             </div>
           </nav>
         </div>
@@ -55,107 +55,107 @@
         <div class="top-news">
           <div class="side">
             <h3>News</h3>
-            <div class="side-article">
-              <img src="media/lean.jpg" alt=" ">
+            <a class="side-article smallhide" href="article.html" onclick="curArticle(0)">
+              <img src="media/car.PNG" alt="Skating by a car at speed">
               <p>Cool dudes doing cool stuff</p>
-            </div>
-            <div class="side-article">
-              <img src="media/lean.jpg" alt=" ">
+            </a>
+            <a class="side-article" href="article.html" onclick="curArticle(1)">
+              <img src="media/friends.PNG" alt="two friends having a rest and looking on">
               <p>Cool dudes doing cool stuff</p>
-            </div>
-            <div class="side-article">
-              <img src="media/lean.jpg" alt=" ">
+            </a>
+            <a class="side-article" href="article.html" onclick="curArticle(2)">
+              <img src="media/zamalek.PNG" alt="longboarder in action with Zamalek Media ">
               <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
           </div>
           <div class="mid">
-            <img src="media/speed.jpg" alt="">
+            <img src="media/help.PNG" alt="Bike rider giving longboarder a helping hand">
             <h1>How fast would you go?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="side">
             <h3>Trending</h3>
-            <div class="side-article">
-              <img src="media/lean.jpg" alt=" ">
+            <a class="side-article" href="article.html" onclick="curArticle(3)">
+              <img src="media/highway.PNG" alt="Two people longboarding down a large road with cars">
               <p>Cool dudes doing cool stuff</p>
-            </div>
-            <div class="side-article">
-              <img src="media/lean.jpg" alt=" ">
+            </a>
+            <a class="side-article" href="article.html" onclick="curArticle(0)">
+              <img src="media/josh.PNG" alt="Sliding on a sharp curve on the road">
               <p>Cool dudes doing cool stuff</p>
-            </div>
-            <div class="side-article">
-              <img src="media/lean.jpg" alt=" ">
+            </a>
+            <a class="side-article smallhide" href="article.html" onclick="curArticle(1)">
+              <img src="media/boys.PNG" alt="The team posing for a photo">
               <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
           </div>
         </div>
 
-        <div class="largeNews">
-            <img src="media/holliday.jpg" alt=" ">
+        <a class="largeNews" href="article.html" onclick="curArticle(2)">
+            <img src="media/lines.PNG" alt="Creating lines on the road by sliding">
             <div class="contentNews">
                 <h3>Cool article</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
-        </div>
+          </a>
 
         <div class="articleBar-news">
-            <div class="article-news">
-                <img src="media/lean.jpg" alt=" ">
+            <a class="article-news" href="article.html" onclick="curArticle(3)">
+                <img src="media/night.PNG" alt="Longboarding in the dark">
                 <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
 
-            <div class="article-news">
-                <img src="media/lean.jpg" alt=" ">
+            <a class="article-news" href="article.html" onclick="curArticle(0)">
+                <img src="media/slide.PNG" alt="Longboarder executing a slide at speed">
                 <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
 
-            <div class="article-news">
-                <img src="media/lean.jpg" alt=" ">
+            <a class="article-news smallhide" href="article.html" onclick="curArticle(1)">
+                <img src="media/speed.PNG" alt="Tucking and speeding down a hill">
                 <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
 
-            <div class="article-news">
-                <img src="media/lean.jpg" alt=" ">
+            <a class="article-news smallhide" href="article.html" onclick="curArticle(2)">
+                <img src="media/car.PNG" alt="Skating by a car at speed">
                 <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
         </div>
 
-        <div class="largeNews">
+        <a class="largeNews" href="article.html" onclick="curArticle(3)">
             <div class="contentNews">
                 <h3>Cool article</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
-            <img src="media/holliday.jpg" alt=" ">
-        </div>
+            <img src="media/woble.PNG" alt="Skating past a car at speed on a rural road">
+          </a>
 
         <div class="articleBar-news">
-            <div class="article-news">
-                <img src="media/lean.jpg" alt=" ">
+            <a class="article-news" href="article.html" onclick="curArticle(0)">
+                <img src="media/hans.PNG" alt="Two longboarders bumping fists">
                 <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
 
-            <div class="article-news">
-                <img src="media/lean.jpg" alt=" ">
+            <a class="article-news" href="article.html" onclick="curArticle(1)">
+                <img src="media/action.PNG" alt="Longboarding actions shot">
                 <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
 
-            <div class="article-news">
-                <img src="media/lean.jpg" alt=" ">
+            <a class="article-news smallhide" href="article.html" onclick="curArticle(2)">
+                <img src="media/lean.PNG" alt="two longboarders on a picturesk road in the mountains">
                 <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
 
-            <div class="article-news">
-                <img src="media/lean.jpg" alt=" ">
+            <a class="article-news smallhide" href="article.html" onclick="curArticle(3)">
+                <img src="media/car.PNG" alt="Skating by a car at speed">
                 <p>Cool dudes doing cool stuff</p>
-            </div>
+            </a>
         </div>
     </main>
     <footer>
         <div class="ad footnote">
           <h3>Advertising</h3>
-          <img src="media/graphic.png">
-          <img src="media/graphic.png">
-          <img src="media/graphic.png">
+          <img src="media/graphic.png" alt="Outline of a longboarder in neon">
+          <img src="media/graphic.png" alt="Outline of a longboarder in neon">
+          <img src="media/graphic.png" alt="Outline of a longboarder in neon">
           <p> to advertise here please sontact us at <a>ads@zamalekMedia.com</a></p>
         </div>
         <div class="contact footnote">
